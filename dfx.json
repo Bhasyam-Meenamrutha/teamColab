@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "swathi_backend": {
+      "main": "src/swathi_backend/main.mo",
+      "type": "motoko"
+    },
+    "swathi_frontend": {
+      "dependencies": [
+        "swathi_backend"
+      ],
+      "source": [
+        "src/swathi_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "swathi_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
